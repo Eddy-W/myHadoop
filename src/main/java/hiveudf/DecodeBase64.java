@@ -1,4 +1,4 @@
-package com.allyes.hive.udf;
+package hiveudf;
 
 import java.io.IOException;
 
@@ -7,9 +7,9 @@ import org.apache.hadoop.io.Text;
 
 import base64.*;
 
-public class EncodeBase64 extends UDF{
+public class DecodeBase64 extends UDF{
 	Text result = new Text();
-    public EncodeBase64() {
+    public DecodeBase64() {
     }
     
     public Text evaluate(String str){
@@ -18,16 +18,15 @@ public class EncodeBase64 extends UDF{
     	}
     	try {
     		byte[] b = str.getBytes();
-    		result.set(Base64.encodeBase64(b));
+    		result.set(Base64.decodeBase64(b));
     	} catch (Exception e) {
     		e.printStackTrace();
     		return null;
     	}
-    	
     	return result;
     }
     public static void main(String[] args) throws IOException{
-    	EncodeBase64 x = new EncodeBase64();
-    	System.out.println(x.evaluate("93"));
+    	DecodeBase64 x = new DecodeBase64();
+    	System.out.println(x.evaluate("bGl1eGlhb3dlbjEyMzQ="));
     }
 }

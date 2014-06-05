@@ -1,4 +1,4 @@
-package com.allyes.hive.udf;
+package hiveudf;
 
 import org.apache.hadoop.hive.ql.exec.UDF;
 

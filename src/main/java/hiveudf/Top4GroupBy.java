@@ -1,4 +1,4 @@
-package com.allyes.hive.udf;
+package hiveudf;
 
 import java.math.BigInteger;
 import java.util.Collections;

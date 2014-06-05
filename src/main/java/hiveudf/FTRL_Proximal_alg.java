@@ -1,14 +1,14 @@
-package com.allyes.hive.udf;
+package hiveudf;
 
  
+import hiveudf.Top4GroupBy.State;
+
 import java.util.Vector;
 
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-
-import com.allyes.hive.udf.Top4GroupBy.State;
 
  
 public class FTRL_Proximal_alg extends UDAF {

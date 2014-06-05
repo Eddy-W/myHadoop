@@ -1,8 +1,12 @@
-package com.allyes.hive.udf;
+package hiveudf;
+
+import hiveudf.TreeUtil.tree;
+import hiveudf.TreeUtil.treeNode;
 
 import java.io.File;
 import java.io.IOException;
  
+
 
 
 
@@ -17,9 +21,6 @@ import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hive.ql.exec.UDF;
-
-import com.allyes.hive.udf.TreeUtil.tree;
-import com.allyes.hive.udf.TreeUtil.treeNode;
  
 
  

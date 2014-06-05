@@ -1,4 +1,4 @@
-package com.allyes.hive.udf;
+package hiveudf;
 
 import java.util.ArrayList;
 import java.util.List;
