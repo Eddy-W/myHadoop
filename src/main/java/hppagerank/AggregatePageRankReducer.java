@@ -1,4 +1,4 @@
-package hppagerank.reducers;
+package hppagerank;
 
 import java.io.IOException;
 import java.text.DecimalFormat;

@@ -1,4 +1,4 @@
-package hppagerank.mappers;
+package hppagerank;
 
 import java.io.IOException;
 
