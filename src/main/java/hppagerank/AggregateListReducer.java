@@ -23,7 +23,7 @@ public class AggregateListReducer extends MapReduceBase implements
 			}
 			empty = false;
 			sb.append(values.next().toString());
-		}
+		} 
 		output.collect(key, new Text(sb.toString()));
 
 	}
