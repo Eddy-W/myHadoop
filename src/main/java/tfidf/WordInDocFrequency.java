@@ -38,7 +38,16 @@ public class WordInDocFrequency extends Configured implements Tool {
 	}
 
 	public static void main(String[] args) throws Exception {
-		int exitCode = ToolRunner.run(new Configuration(), new WordInDocFrequency(), args);
+		String dir = "hdfs://localhost:9000/user/hpuser/";
+		
+		Configuration conf = new Configuration();
+		conf.set("fs.default.name", "hdfs://localhost:9000");
+		
+		String[] parameters = new String[2];
+		parameters[0]=dir+"word_origin.txt";
+		parameters[1]=dir+"word_docfrequency";
+		
+		int exitCode = ToolRunner.run(conf, new WordInDocFrequency(), parameters);
 		System.exit(exitCode);
 	}
 }
