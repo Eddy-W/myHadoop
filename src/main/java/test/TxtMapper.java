@@ -1,4 +1,4 @@
-package org.conan.myhadoop.mr;
+package test;
 
 import org.apache.hadoop.io.IntWritable;
 

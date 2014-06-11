@@ -1,4 +1,4 @@
-package org.conan.myhadoop.mr;
+package test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
